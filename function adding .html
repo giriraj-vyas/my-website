@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+   <head> 
+   	 <title> Airthmatic Function</title>
+   	 
+       <script>
+         function add()
+         {
+          var a,b,c;
+          a=Number(document.getElementById("first").value);
+          b=Number(document.getElementById("second").value);
+          c= a + b;
+          document.getElementById("answer").value= c;
+         }
+        function sub()
+         {
+          var a,b,c;
+          a=Number(document.getElementById("first").value);
+          b=Number(document.getElementById("second").value);
+          c= a - b;
+          document.getElementById("answer").value= c;
+         }
+          function multiplay()
+         {
+          var a,b,c;
+          a=Number(document.getElementById("first").value);
+          b=Number(document.getElementById("second").value);
+          c= a * b;
+          document.getElementById("answer").value= c;
+         }
+          function division()
+         {
+          var a,b,c;
+          a=Number(document.getElementById("first").value);
+          b=Number(document.getElementById("second").value);
+          c= a / b;
+          document.getElementById("answer").value= c;
+         }
+       </script>
+    </head>
+  <body>
+      Enter the First number : <input id="first"> <br>
+      Enter the Second number: <input id="second"> <br>
+      enter the answar: <input id="answer"> <br>
+      <button onclick="add()">Add</button> <br>
+      <button onclick="sub()">sub</button> <br>
+      <button onclick="multiplay()">multiplay</button> <br>
+      <button onclick="division()">division</button>
+  </body>
+</html>
