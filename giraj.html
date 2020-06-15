@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title></title>
+    </head>
+    <body>
+
+         <input type="file" id="rohit">
+         <br>
+         <p id="shyam"> </p>
+        <script>
+          document.getElementById('rohit').addEventListener('change',function()
+            {
+              var fr = new FileReader();
+              fr.onload=function()
+              {
+                   var h = fr.result.split(",")
+                   var u;
+                   for(u=0;u<h.length;u++){
+                    //console.log(h[u])
+                    document.getElementById('shyam').innerHTML += h[u] + "<br>";
+                   }
+              }
+              fr.readAsText(this.files[0]);
+            } )
+            
+        </script>
+    </body>
+</html>

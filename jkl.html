@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="file" id="pen">
+	<br>
+	<p id="marker">
+
+		<script>
+			document.getElementById('pen').addEventListener('change',function()
+			{
+				var fr = new FileReader();
+				fr.onload=function()
+				{
+					var f = fr.result.split(",")
+					var l;
+					for(l=0;l<f.length;i++)
+						console.log(f[l])
+					document.getElementById('marker').innerHTML += f[l] + "<br>";
+				}
+				fr.ReadAsText(this.files[0])
+			}
+		</script>
+
+</body>
+</html>

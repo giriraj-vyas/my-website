@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="lkl"></p>
+	<script>
+		var x = "ram,shyam,giraj,guru"
+		var y = x.split(",")
+		//console.log(y)
+		var p;
+		for(p=0;p<y.length;p++)
+		{
+			console.log(p)
+			console.log(y[p])
+			document.getElementById('lkl').innerHtml = y[p];
+		}
+	</script>
+
+</body>
+</html>
