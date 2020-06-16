@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<button id="mybutton" onclick="myfunction()">on
+	</button>
+	<script>
+		function myfunction() 
+		{
+		  var x = document.getElementById('mybutton').innerHTML;	
+          if(x=="on") 
+            {
+             document.getElementById('mybutton').innerHTML = "off";
+            }   
+            else
+              {
+               document.getElementById('mybutton').innerHTML = "on";
+              }
+		}
+	</script>
+</body>
+</html>
