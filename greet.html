@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+enter name: <br><input type="text" id="ol" > <br>
+<button onclick="greet()"> Greet </button>
+<h1 id="tyt" style="color:blue">
+
+<script>
+	     function greet()
+	     {
+          var name = document.getElementById('ol').value;
+          if(name=="vicky")
+          {
+          	document.getElementById('tyt').innerHTML = "Hello ," + ' ' + name;
+          }
+          else if (name=="rocky")
+          {
+          	document.getElementById('tyt').innerHTML = "Hello ," + ' ' + name;
+          }
+           	else
+          	{
+          		document.getElementById('tyt').innerHTML ="Hi;"
+          	}
+          }
+	     
+</script>
+</body>
+</html>

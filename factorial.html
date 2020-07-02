@@ -1,0 +1,28 @@
+
+<html>
+
+<head>
+    <title>factorial</title>
+</head>
+
+<body>
+    Enter Number: <br> <input id="num" type="number"> <br>
+    <button onclick="show()">Factorial</button> <br>
+    <h1 id="answer" style="color:orange"></h1>
+    <script>
+        function show() 
+        {
+               var no = Number(document.getElementById("num").value);
+                var fact;
+                fact = 1;
+                var i;
+                for (i=1; i<=no; i++)
+                   {
+                     fact*=i;
+        }
+                    document.getElementById("answer").innerHTML = "Factorial Of "+no+" is : "+fact;
+                   }
+    </script>
+</body>
+
+</html>

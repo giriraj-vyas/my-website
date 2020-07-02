@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	yeear<br><input type="number" id="demo1"> <br>
+	<button onclick="leep()" >enter</button> 
+     <h3 id="demo2"></h>
+	<script type="text/javascript">
+		function leep()
+		{ 
+			var yeear = document.getElementById('demo1').value;
+			if(yeear%4==0)
+			{
+			document.getElementById('demo2').innerHTML = yeear + ' '+ "is leep year"; 
+		    }
+		    else
+		    {
+		    	document.getElementById('demo2').innerHTML = yeear + ' '+ "is not a leep year";
+		    }
+        }
+	</script>
+
+</body>
+</html>

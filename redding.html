@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	       <title></title>
+    </head>
+  
+    <body style="text-align:; background-color: pink;">
+
+	       <input type="file" id="pubg">
+	       <br>
+	       <p id="jbl"> </p>
+        <script>
+     	    document.getElementById('pubg').addEventListener('change',function()
+            {
+            	var fr = new FileReader();
+            	fr.onload=function()
+            	{
+                   var h = fr.result.split(",")
+                   var u;
+                   for(u=0;u<h.length;u++){
+                   	console.log(h[u])
+                    var c = /1/g;
+                    var d = h[u].math(c);
+                   	document.getElementById('jbl').innerHTML += d + "<br>";
+                   }
+            	}
+            	fr.readAsText(this.files[0]);
+            } )
+            
+        </script>
+    </body>
+</html>
